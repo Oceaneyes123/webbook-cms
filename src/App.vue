@@ -44,7 +44,7 @@
 <script>
 export default {
   data: () => ({
-    drawer: null,
+    drawer: false,
     items: ["Dashboard", "Textbooks", "Video Material", "Archive"],
     items2: [
       { picture: 28, text: "Joseph" },
