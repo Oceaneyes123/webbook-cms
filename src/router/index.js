@@ -14,6 +14,11 @@ const routes = [{
     name: "Dashboard",
     component: require("../views/Dashboard.vue").default
   },
+  {
+    path: "/textbooks",
+    name: "Textbooks",
+    component: require("../views/Textbooks.vue").default
+  },
 
 ];
 
