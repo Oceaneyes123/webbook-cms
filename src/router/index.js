@@ -1,10 +1,10 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 
-
 Vue.use(VueRouter);
 
-const routes = [{
+const routes = [
+  {
     path: "/index",
     name: "Index",
     component: require("../views/Index.vue").default
@@ -19,7 +19,21 @@ const routes = [{
     name: "Textbooks",
     component: require("../views/Textbooks.vue").default
   },
-
+  {
+    path: "/videomaterial",
+    name: "Video Material",
+    component: require("../views/VideoMaterial.vue").default
+  },
+  {
+    path: "/videomaterial/addcontent",
+    name: "AddContent",
+    component: require("../views/contents/AddContent.vue").default
+  },
+  {
+    path: "/videomaterial/addcontent/tips",
+    name: "AddContent",
+    component: require("../views/contents/Tips.vue").default
+  }
 ];
 
 const router = new VueRouter({

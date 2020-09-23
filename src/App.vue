@@ -19,9 +19,18 @@
               <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>-->
           <v-list-item-content
-            @click="$router.push(`/${item.toLowerCase().trim().replace(' ', '')}`)"
+            @click="
+              $router.push(
+                `/${item
+                  .toLowerCase()
+                  .trim()
+                  .replace(' ', '')}`
+              )
+            "
           >
-            <v-list-item-title class="white--text">{{ item }}</v-list-item-title>
+            <v-list-item-title class="white--text">{{
+              item
+            }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -62,4 +71,3 @@ export default {
   }
 };
 </script>
-  

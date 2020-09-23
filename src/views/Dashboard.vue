@@ -68,10 +68,13 @@
                     class="white--text"
                     color="#00ABDA"
                     @click="curriculumDialog = true"
-                  >+ CURRICULUM</v-btn>
+                    >+ CURRICULUM</v-btn
+                  >
                 </v-col>
                 <v-col>
-                  <v-btn block class="white--text" color="#00ABDA">+ VIDEO MATERIAL</v-btn>
+                  <v-btn block class="white--text" color="#00ABDA"
+                    >+ VIDEO MATERIAL</v-btn
+                  >
                 </v-col>
               </v-row>
             </v-container>
@@ -114,7 +117,13 @@
             </v-col>
           </v-row>
           <v-row justify="end">
-            <v-btn color="grey" outlined class="mr-3" @click="curriculumDialog = false">Cancel</v-btn>
+            <v-btn
+              color="grey"
+              outlined
+              class="mr-3"
+              @click="curriculumDialog = false"
+              >Cancel</v-btn
+            >
             <v-btn color="#00ABDA" class="white--text">Submit</v-btn>
           </v-row>
         </v-container>
@@ -143,4 +152,3 @@ export default {
   }
 };
 </script>
-  
